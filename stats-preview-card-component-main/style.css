@@ -1,0 +1,129 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  color: #eee;
+}
+
+.violet {
+  color: hsl(277, 64%, 61%);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+/* styles */
+.container {
+  width: 144rem;
+  margin: auto;
+  padding: 4.8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  border-radius: 10px;
+  background-color: hsl(244, 38%, 16%);
+  overflow: hidden;
+}
+
+.text-box {
+  padding: 10rem;
+}
+.img-box {
+  background-image: linear-gradient(
+      rgba(170, 92, 219, 0.5),
+      rgba(170, 92, 219, 0.5)
+    ),
+    url(images/image-header-desktop.jpg);
+
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  font-size: 4.2rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #eedef8;
+  margin-bottom: 6rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.stat-number {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.stat-info {
+  color: #eedef8;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+/* Create */
+.create {
+  font-size: 1.6rem;
+  color: #eedef8;
+  margin-top: 9.6rem;
+}
+.create-link:link,
+.create-link:visited {
+  color: hsl(277, 64%, 61%);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.create-link:hover,
+.create-link:active {
+  color: #eedef8;
+  border-bottom: 1px solid #eedef8;
+}
+
+/* Query */
+
+@media (max-width: 25em) {
+  .container {
+    width: 68rem;
+    padding: 9.6rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .text-box {
+    padding: 4.8rem 5rem;
+    text-align: center;
+  }
+  .text {
+    font-size: 2.2rem;
+  }
+  .img-box {
+    height: 48rem;
+    grid-row: 1;
+  }
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+  .flex {
+    gap: 1rem;
+  }
+}
