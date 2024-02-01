@@ -1,0 +1,135 @@
+/* General */
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+.mb {
+  margin-bottom: 3rem;
+}
+.mb-sm {
+  margin-bottom: 1.8rem;
+}
+.container {
+  width: 1440px;
+  margin: auto;
+  margin-top: 6rem;
+}
+.font-fraunces {
+  font-family: "fraunces", serif;
+  font-weight: 700;
+}
+
+.grid {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.135);
+}
+
+/* Image section */
+.img-section {
+  background: url(images/image-product-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Text section */
+.text-section {
+  padding: 5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+.sub-header {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-size: 1.4rem;
+  display: block;
+  letter-spacing: 5px;
+}
+
+.header {
+  color: hsl(212, 21%, 14%);
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.info-text {
+  color: hsl(228, 12%, 48%);
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+/* Pricing */
+.price-section {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.off {
+  font-size: 3.5rem;
+  color: hsl(158, 36%, 37%);
+}
+.real {
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+/* Button */
+.add-btn {
+  width: 100%;
+  padding: 14px 0 14px 0;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: all 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.32);
+}
+
+.add-btn:hover,
+.add-btn:active {
+  background-color: #12261f;
+}
+
+/* Media query */
+@media (max-width: 375px) {
+  html {
+    font-size: 51%;
+  }
+  .container {
+    width: 375px;
+    margin: 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    width: auto;
+    margin: 2rem;
+  }
+  .img-section {
+    background: url(images/image-product-mobile.jpg);
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+}
